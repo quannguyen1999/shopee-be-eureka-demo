@@ -1,8 +1,6 @@
-server:
-  port: 8072
 spring:
   application:
-    name: "shopee-eureka-server"
+    name: "eureka"
   config:
     import: "configserver:http://localhost:8071/"
 
