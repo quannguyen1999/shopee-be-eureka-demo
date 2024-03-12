@@ -16,8 +16,17 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
+		<otelVersion>1.32.0</otelVersion>
 	</properties>
 	<dependencies>
+		<!--	Open Telemetry	-->
+		<dependency>
+			<groupId>io.opentelemetry.javaagent</groupId>
+			<artifactId>opentelemetry-javaagent</artifactId>
+			<version>${otelVersion}</version>
+			<scope>runtime</scope>
+		</dependency>
+
 		<!--	Add micrometer	-->
 		<dependency>
 			<groupId>io.micrometer</groupId>

@@ -24,3 +24,12 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
+
+#Logging
+logging:
+  #  level:
+  #    org:
+  #      springframework:
+  #        security: TRACE
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
